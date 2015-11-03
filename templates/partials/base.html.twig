@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+
+    {% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png', true) }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+    {% do assets.addCss('theme://assets/css/main.css') %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+    {% endblock %}
+    {{ assets.js() }}
+
+    {% endblock head%}
+</head>
+<body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <section id="main">
+            <header>
+                <span class="avatar"><img src= "{{ page.header.avatar }}" alt="" /></span>
+                <h1>{{ page.header.title }}</h1>
+                <p>{{ page.header.description }}</p>
+            </header>
+            <footer>
+                <ul class="icons">
+                    <li><a href="{{ page.header.twitter }}" class="fa-twitter">Twitter</a></li>
+                    <li><a href="{{ page.header.instagram }}" class="fa-instagram">Instagram</a></li>
+                    <li><a href="{{ page.header.facebook }}" class="fa-facebook">Facebook</a></li>
+                </ul>
+            </footer>
+        </section>
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; <a href="{{ page.header.credits.url }}">{{ page.header.credits.text }}</a></li>
+                <li>Development: <a href="http://lab.dev-code.fr">Dev'Code</a></li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+    </script>
+
+</body>
+</html>
