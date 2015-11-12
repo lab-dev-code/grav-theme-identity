@@ -1,5 +1,7 @@
 # Identity
 
+[![Join the chat at https://gitter.im/lab-dev-code/grav-theme-identity](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lab-dev-code/grav-theme-identity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![Identity](screenshot.jpg)
 
 Identity is a simple [Grav][grav] theme, originally designed by [HTML5 UP][html5-up].
