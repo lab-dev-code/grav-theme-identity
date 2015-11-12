@@ -1,5 +1,5 @@
 name: Identity
-version: 1.0.3
+version: 1.1.0
 description: "The awesome HTML5 UP Identity theme for Grav"
 icon: info
 author:
@@ -7,7 +7,7 @@ author:
   email: lab.dev.code@gmail.com
   url: http://lab.dev-code.fr
 homepage: https://github.com/lab-dev-code/grav-theme-identity
-demo: http://lab.dev-code.fr/demos/grav-themes/identity
+demo: http://lab.dev-code.fr/grav-demos/grav-theme-identity
 keywords: identity, theme
 bugs: https://github.com/lab-dev-code/grav-theme-identity/issues
 license: CC-BY

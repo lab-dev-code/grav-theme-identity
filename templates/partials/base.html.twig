@@ -28,7 +28,7 @@
         <!-- Main -->
         <section id="main">
             <header>
-                <span class="avatar"><img src= "{{ page.header.avatar }}" alt="" /></span>
+                <span class="avatar">{{ ('<img src="' ~ page.header.avatar ~ '" alt="" />')|absolute_url }}</span>
                 <h1>{{ page.header.title }}</h1>
                 <p>{{ page.header.description }}</p>
             </header>
@@ -43,7 +43,7 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="copyright">
-                <li>&copy; <a href="{{ page.header.credits.url }}">{{ page.header.credits.text }}</a></li>
+                <li>&copy; {{ ('<a href="' ~ page.header.credits.url ~ '">')|absolute_url }}{{ page.header.credits.text }}</a></li>
                 <li>Development: <a href="http://lab.dev-code.fr">Dev'Code</a></li>
                 <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
