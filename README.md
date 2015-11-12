@@ -1,6 +1,7 @@
 # Identity
 
 [![Join the chat at https://gitter.im/lab-dev-code/grav-theme-identity](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lab-dev-code/grav-theme-identity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/1398c9c2-4eab-4ab6-a42e-f076ab1d531a/mini.png)](https://insight.sensiolabs.com/projects/1398c9c2-4eab-4ab6-a42e-f076ab1d531a)
 
 ![Identity](screenshot.jpg)
 
